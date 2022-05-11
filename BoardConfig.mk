@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/nokia/NB1
+DEVICE_PATH := device/nokia/A1N
 
 # Architecture
 TARGET_ARCH := arm64
@@ -98,12 +98,13 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.config
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1da4000.ufshc
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := nb1_defconfig
+TARGET_KERNEL_CONFIG := a1n_defconfig
 TARGET_KERNEL_SOURCE := kernel/nokia/msm8998
 TARGET_KERNEL_VERSION := 4.4
 
@@ -122,8 +123,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_nb1
-TARGET_RECOVERY_DEVICE_MODULES := libinit_nb1
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a1n
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a1n
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -205,4 +206,4 @@ TARGET_POWERHAL_BOOST_EXT := $(DEVICE_PATH)/configs/power/boost-ext.cpp
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/mode-ext.cpp
 
 # Inherit the proprietary files
--include vendor/nokia/NB1/BoardConfigVendor.mk
+-include vendor/nokia/A1N/BoardConfigVendor.mk
