@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/nokia/NB1
+DEVICE_PATH := device/nokia/A1N
 
 # Architecture
 TARGET_ARCH := arm64
@@ -92,13 +92,14 @@ LOC_HIDL_VERSION := 4.0
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 sched_enable_hmp=0 sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.configfs=true
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 loop.max_part=7 androidboot.selinux=permissive
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := nb1_defconfig
+TARGET_KERNEL_CONFIG := a1n_defconfig
 TARGET_KERNEL_SOURCE := kernel/nokia/msm8998
 TARGET_KERNEL_VERSION := 4.4
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-zyc/bin
@@ -115,8 +116,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_nb1
-TARGET_RECOVERY_DEVICE_MODULES := libinit_nb1
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a1n
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a1n
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -188,4 +189,4 @@ WIFI_AVOID_IFACE_RESET_MAC_CHANGE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/nokia/NB1/BoardConfigVendor.mk
+-include vendor/nokia/A1N/BoardConfigVendor.mk

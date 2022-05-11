@@ -114,11 +114,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5 \
+    android.hardware.camera.provider@2.4 \
     vendor.qti.hardware.camera.device@1.0
 
 PRODUCT_PACKAGES += \
-    camera.msm8998 \
     libmm-qcamera \
     mm-qcamera-app \
     libhal_dbg
@@ -458,14 +457,15 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.nb1.smartamp_init.sh \
+    init.a1n.smartamp_init.sh \
     init.qcom.early_boot.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
-    init.nb1.camera.rc \
-    init.nb1.target.rc \
+    init.a1n.camera.rc \
+    init.a1n.poweroff_charging.rc \
+    init.a1n.target.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
@@ -611,4 +611,4 @@ PRODUCT_PACKAGES += \
     WfdCommon
 
 # Inherit vendor
-$(call inherit-product, vendor/nokia/NB1/NB1-vendor.mk)
+$(call inherit-product, vendor/nokia/A1N/A1N-vendor.mk)
