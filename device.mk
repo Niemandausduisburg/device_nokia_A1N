@@ -246,6 +246,38 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     libshim-imsvt
+    
+# Init-Scripts
+PRODUCT_PACKAGES += \
+    init.a1n.battery.rc \
+    init.a1n.camera.rc \
+    init.a1n.dbg.rc \
+    init.a1n.fingerprint.rc \
+    init.a1n.poweroff_charging.rc \
+    init.a1n.target.rc \
+    init.fih.elabel.rc \
+    init.fih.fqcaudio.rc \
+    init.msm.usb.configfs.rc \
+    init.nb1.lcm.rc \
+    init.nb1.led.rc \
+    init.nb1.sd.rc \
+    init.nb1.smartamp.rc \
+    init.nb1.target.rc \
+    init.nb1.touch.rc \
+    init.nb1.wbg.rc \
+    init.nfc.nxp.rc \
+    init.qcom.factory.rc \
+    init.qcom.fs.rc \
+    init.qcom.ramdump.rc \
+    init.qcom.rc \
+    init.qcom.target.rc \
+    init.qcom.usb.rc \
+    init.recovery.qcom.rc \
+    init.sku.A1C.rc \
+    init.sku.A1N.rc \
+    init.sku.rc \
+    init.target.rc \
+    vendor.nxp.hardware.nfc@1.2-service.rc
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -329,7 +361,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Permissions
