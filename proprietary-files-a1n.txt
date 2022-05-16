@@ -1732,8 +1732,8 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8998.so
 system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libsoftkeymasterdevice.so
-system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libkeymaster_messages.so
-system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libkeymaster_portable.so
+system/system/lib64/libkeymaster_messages.so:vendor/lib64/libkeymaster_messages.so
+system/system/lib64/libkeymaster_portable.so:vendor/lib64/libkeymaster_portable.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
