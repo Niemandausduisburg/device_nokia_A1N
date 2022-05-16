@@ -189,6 +189,8 @@ vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmlib2d_interface.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib64/libfastcvadsp_stub.so
 
 # Camera (Sensors)
 vendor/lib/libmmcamera2_c2d_module.so
@@ -297,6 +299,8 @@ vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_sony_imx378_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
+vendor/lib/libseemore.so
+vendor/lib64/libseemore.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64a_imx376_eeprom.so
@@ -1724,68 +1728,20 @@ vendor/bin/fqcfingerprint
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so
 vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8998.so
+system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libsoftkeymasterdevice.so
+system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libkeymaster_messages.so
+system/system/lib64/libsoftkeymasterdevice.so:vendor/lib64/libkeymaster_portable.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-system/system/lib64/libkeymaster_messages.so
-system/system/lib64/vndk-29/libkeymaster_messages.so
-system/system/lib/vndk-29/libkeymaster_messages.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/libqcbor.so
-
-# Init-Scripts
-vendor/bin/init.class_main.sh
-vendor/bin/init.crda.sh
-vendor/bin/init.mdm.sh
-vendor/bin/init.nb1.lcm.sh
-vendor/bin/init.nb1.smartamp_init.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.coex.sh
-vendor/bin/init.qcom.crashdata.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.efs.sync.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qcom.sdio.sh
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/init.qcom.sh
-vendor/bin/init.qcom.usb.sh
-vendor/bin/init.qti.can.sh
-vendor/bin/init.qti.fm.sh
-vendor/bin/init.qti.ims.sh
-vendor/bin/init.qti.qseecomd.sh
-vendor/etc/init/hw/init.a1n.battery.rc
-vendor/etc/init/hw/init.a1n.camera.rc
-vendor/etc/init/hw/init.a1n.dbg.rc
-vendor/etc/init/hw/init.a1n.fingerprint.rc
-vendor/etc/init/hw/init.a1n.poweroff_charging.rc
-vendor/etc/init/hw/init.a1n.target.rc
-vendor/etc/init/hw/init.fih.elabel.rc
-vendor/etc/init/hw/init.fih.fqcaudio.rc
-vendor/etc/init/hw/init.msm.usb.configfs.rc
-vendor/etc/init/hw/init.nb1.lcm.rc
-vendor/etc/init/hw/init.nb1.led.rc
-vendor/etc/init/hw/init.nb1.sd.rc
-vendor/etc/init/hw/init.nb1.smartamp.rc
-vendor/etc/init/hw/init.nb1.target.rc
-vendor/etc/init/hw/init.nb1.touch.rc
-vendor/etc/init/hw/init.nb1.wbg.rc
-vendor/etc/init/hw/init.nfc.nxp.rc
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.fs.rc
-vendor/etc/init/hw/init.qcom.ramdump.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qcom.target.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/init/hw/init.sku.A1C.rc
-vendor/etc/init/hw/init.sku.A1N.rc
-vendor/etc/init/hw/init.sku.rc
-vendor/etc/init/hw/init.target.rc
-vendor/etc/init/hw/vendor.nxp.hardware.nfc@1.2-service.rc
 
 # Keystore
 vendor/lib/hw/keystore.msm8998.so
@@ -1878,5 +1834,3 @@ vendor/lib64/sensor_calibrate.so
 # Wifi
 vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
-system/system/product/lib/vendor.qti.hardware.data.iwlan@1.0.so
-system/system/product/lib64/vendor.qti.hardware.data.iwlan@1.0.so

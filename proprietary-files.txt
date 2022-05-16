@@ -441,6 +441,8 @@ vendor/bin/xtra-daemon
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
+vendor/lib/libcdfw.so
+vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libizat_client_api.so
@@ -1210,3 +1212,7 @@ vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
+
+# Zygote
+system/system/lib/librtp_jni.so
+system/system/lib64/librtp_jni.so
