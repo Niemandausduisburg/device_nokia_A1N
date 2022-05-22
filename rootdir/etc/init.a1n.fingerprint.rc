@@ -1,7 +1,5 @@
 on boot
     setprop sys.fp.navigation.enable 1
-
-on fs
     chown system system /dev/goodix_fp
     chmod 666 /dev/goodix_fp
 
