@@ -99,12 +99,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5 \
+    android.hardware.camera.provider@2.4 \
     vendor.qti.hardware.camera.device@1.0
 
 PRODUCT_PACKAGES += \
-    libmm-qcamera \
-    mm-qcamera-app \
     libhal_dbg
     
 # Camera NoGAPPS-fix
@@ -358,10 +356,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-    
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
