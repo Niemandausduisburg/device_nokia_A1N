@@ -104,8 +104,8 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
+# PRODUCT_PACKAGES += \
+#    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
