@@ -101,6 +101,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := nb1_defconfig
 TARGET_KERNEL_SOURCE := kernel/nokia/msm8998
 TARGET_KERNEL_VERSION := 4.4
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-zyc/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Media
 USE_DEVICE_SPECIFIC_MEDIA := true
