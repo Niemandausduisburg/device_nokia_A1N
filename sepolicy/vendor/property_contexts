@@ -1,5 +1,7 @@
 # Audio
 persist.sys.PreventPowerkey                 u:object_r:vendor_audio_prop:s0
+audio_hal.in_period_size 		    u:object_r:vendor_audio_prop:s0
+audio_hal.period_multiplier		    u:object_r:vendor_audio_prop:s0
 
 # Camera
 camera_screen_light_delay                   u:object_r:vendor_camera_prop:s0
@@ -14,16 +16,23 @@ camerai.                                    u:object_r:vendor_camera_prop:s0
 camera.                                     u:object_r:vendor_camera_prop:s0
 ro.camera.                                  u:object_r:vendor_camera_prop:s0
 persist.camera.                             u:object_r:vendor_camera_prop:s0
+persist.fih.camera.                   	    u:object_r:vendor_camera_prop:s0
+gsm.operator.numeric			    u:object_r:radio_prop:s0
 
 # Display
 sdm.disable_hdr_lut_gen                 u:object_r:vendor_display_prop:s0
 
 # Fingerprint
 sys.gxfp.                               u:object_r:vendor_fingerprint_prop:s0
+vendor.gxfp.version			u:object_r:vendor_fingerprint_prop:s0
 ro.template.count                       u:object_r:vendor_fingerprint_prop:s0
 sys.fih.fingerprint                     u:object_r:vendor_fingerprint_prop:s0
 sys.fp.vid                              u:object_r:vendor_fingerprint_prop:s0
 persist.enable.esd                      u:object_r:vendor_fingerprint_prop:s0
+gf.debug.dump_data			u:object_r:vendor_fingerprint_prop:s0
+
+#MWQEM
+persist.vendor.mwqem.                  u:object_r:vendor_mwqem_prop:s0
 
 # Sensors
 persist.pressure.diff                   u:object_r:vendor_default_prop:s0

@@ -1,0 +1,1 @@
+allow vold_prepare_subdirs fingerprintd_data_file:dir { create open read write search getattr setattr rmdir };
