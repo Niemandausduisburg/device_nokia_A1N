@@ -1,4 +1,5 @@
 dontaudit init { bt_firmware_file firmware_file }:filesystem getattr;
+get_prop(vendor_init, vendor_fingerprint_prop) 
 
 # Audio
 allow init audio_device:chr_file r_file_perms;

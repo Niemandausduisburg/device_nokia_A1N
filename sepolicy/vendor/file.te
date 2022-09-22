@@ -24,3 +24,6 @@ type sysfs_ois, sysfs_type, fs_type;
 type sysfs_range, sysfs_type, fs_type;
 type sysfs_msm_subsys, fs_type, sysfs_type;
 type sysfs_usb_device, sysfs_type, fs_type;
+
+# Frp
+type fpc_sysfs, fs_type, sysfs_type;
